@@ -58,11 +58,9 @@ const Home = ({ songData, songOptions }) => {
 
   var questions = songData.slice(0, questionLimit);
   var currentQuestion = questions[questionNumber];
-  var quizOptions = songOptions.slice(0, questionLimit * 3);
-  var optionArray = quizOptions.slice(
-    questionNumber * 2,
-    questionNumber * 2 + 3
-  );
+  var optionArray = songOptions
+    .filter((question) => question.song != currentQuestion.song)
+    .slice(questionNumber * 2, questionNumber * 2 + 3);
 
   var correctArray = [
     {
