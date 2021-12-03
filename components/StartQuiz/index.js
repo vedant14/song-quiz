@@ -9,7 +9,7 @@ export function StartQuiz({
 	questionNumber,
 }) {
 	const [score, setScore] = useState(0);
-	const [showResult, setShowResult] = useState(true);
+	const [showResult, setShowResult] = useState(false);
 
 	return (
 		<Wrapper className="Container">
