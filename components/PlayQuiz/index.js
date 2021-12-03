@@ -7,6 +7,7 @@ export function PlayQuiz({
 	currentQuestion,
 	optionArray,
 	questionNumber,
+	setShowResult,
 	setQuestionNumber,
 }) {
 	const [selectedAnswer, setSelectedAnswer] = useState(null);
@@ -16,6 +17,7 @@ export function PlayQuiz({
 		setSelectedAnswer(null);
 		if (questionNumber + 1 >= questionLimit) {
 			setQuestionNumber(0);
+			setShowResult(true);
 		} else {
 			setQuestionNumber(questionNumber + 1);
 		}

@@ -57,9 +57,8 @@ const Home = ({ songData, songOptions }) => {
   const questionLimit = process.env.NEXT_PUBLIC_QUESTION_LIMIT;
 
   var questions = songData.slice(0, questionLimit);
-  var quizOptions = songOptions.slice(0, questionLimit * 3);
-
   var currentQuestion = questions[questionNumber];
+  var quizOptions = songOptions.slice(0, questionLimit * 3);
   var optionArray = quizOptions.slice(
     questionNumber * 2,
     questionNumber * 2 + 3
