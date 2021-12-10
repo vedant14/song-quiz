@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+english.jsimport React, { useState } from "react";
 import { Layout, Footer, StartQuiz } from "../components";
 import Airtable from "airtable";
 
@@ -8,7 +8,7 @@ export async function getStaticProps() {
   });
 
   const records = await airtable
-    .base(process.env.NEXT_PUBLIC_AIRTABLE_BASE_ID)("Hindi")
+    .base(process.env.NEXT_PUBLIC_AIRTABLE_BASE_ID)("English")
     .select({
       fields: ["Lyrics", "Song name", "artist", "genre"],
     })
@@ -86,3 +86,4 @@ const Home = ({ songData, songOptions }) => {
 };
 
 export default Home;
+;

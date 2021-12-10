@@ -1,11 +1,11 @@
 import { createGlobalStyle } from "styled-components";
 
 export const colors = {
-  primaryBlack: "#262626",
+  primaryBlack: "#000",
   darkGrey: "#BBC8D4",
   lightBlue: "#66A5FF",
   brandYellow: "#FFE866",
-  primaryBlue: "#3F5685",
+  primaryBlue: "#935CBB",
   primaryOrange: "#F8BF6E",
   white: "#FAFAFA",
 };
@@ -18,7 +18,7 @@ export const GlobalStyles = createGlobalStyle`
 
   body {
     font-family: 'Inter', sans-serif;
-    background-color: ${colors.white};
+    background-color: ${colors.primaryBlack};
     min-height: 100vh;
     margin: 0;
     padding: 0;
