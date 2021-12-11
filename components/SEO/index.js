@@ -3,7 +3,7 @@ import React from "react";
 
 export function SEO({ title, description }) {
   if (title === undefined) {
-    title = "Better Product Manager";
+    title = "Song-tastics";
   } else {
     title = title + " | Better Product Manager";
   }

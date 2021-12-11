@@ -62,3 +62,12 @@ export const Wrapper = styled.div`
 		grid-area: score;
 	}
 `;
+
+export const ShowAnswerCard = styled.div`
+	background: ${colors.white};
+	color: ${colors.primaryBlack};
+	padding: 1px 30px;
+	max-width: 80%;
+	margin: auto;
+	border-radius: 5px;
+`;

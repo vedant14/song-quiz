@@ -119,7 +119,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   button {
-    color: ${colors.primaryBlue};
+    color: ${colors.primaryBlack};
     background: ${colors.white};
     font-style: normal;
     font-weight: 600;

@@ -30,4 +30,13 @@ export const Wrapper = styled.div`
 			}
 		}
 	}
+	> hr {
+		width: 200px;
+		margin: 30px auto;
+	}
+	> div#share > div#share-buttons {
+		button {
+			padding: 5px 20px;
+		}
+	}
 `;
