@@ -1,4 +1,4 @@
-english.jsimport React, { useState } from "react";
+import React, { useState } from "react";
 import { Layout, Footer, StartQuiz } from "../components";
 import Airtable from "airtable";
 
@@ -86,4 +86,3 @@ const Home = ({ songData, songOptions }) => {
 };
 
 export default Home;
-;
