@@ -32,6 +32,9 @@ export async function getStaticProps() {
     };
   });
 
+  shuffleArray(songData);
+  shuffleArray(songOptions);
+
   return {
     props: {
       songData,
@@ -50,10 +53,8 @@ function shuffleArray(array) {
   }
   return array;
 }
-const Home = ({ songData, songOptions }) => {
-  shuffleArray(songData);
-  shuffleArray(songOptions);
 
+const Home = ({ songData, songOptions }) => {
   const [questionNumber, setQuestionNumber] = useState(0);
   const questionLimit = process.env.NEXT_PUBLIC_QUESTION_LIMIT;
 
