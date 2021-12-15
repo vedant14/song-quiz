@@ -1,14 +1,28 @@
 [
   {
     "right": [
-      "Genius. How did you guess that :O",
-      "Correct Answer! Is Shazam in your head?",
-      "You got that one right!"
+      "Woah! You are good at this",
+      "Only Lyrics OGs can guess that!",
+      "That hit the right chord!",
+      "Wow! Are you Shazam?",
+      "Correct answer! We are your fans",
+      "We should buy you a NFT for guessing that!",
+      "Wow, even we could not guess that!",
+      "That's correct!",
+      "Songtastic, you are on a roll!",
+      "Genius, how did you guess that"
     ],
     "wrong": [
-      "Oh, better luck in the next question :|",
-      "Come on, you can do better!",
-      "Bad luck, I thought that was right too :/"
+      "Ah! You can get the next one",
+      "We thought that was right too!",
+      "Better luck in the next question!",
+      "Aw, we all get it wrong sometimes",
+      "Better pay attention to the lyrics next time",
+      "That’s incorrect",
+      "Argh, who remembers song lyrics!",
+      "You will hit the right chord next time!",
+      "Bad luck, let’s try again!",
+      "Next one is going to be yours!"
     ]
   }
 ]

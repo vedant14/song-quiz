@@ -12,21 +12,20 @@ export function QuizResult({ score, setScore, setShowResult }) {
 	const shareText =
 		"?text=I scored " +
 		score +
-		" points on song-tastic. Take the quiz and see if you can beat my score.";
+		" points on Songtastic. Take the song lyrics quiz and see if you can beat my score.";
 	const twitterText =
-		twitterLink +
-		shareText +
-		"&url=https://typedream.site/stripe-loon-9883";
-	const whatsappText = whatsappLink + shareText;
+		twitterLink + shareText + "&url=https://www.songtastic.xyz/";
+	const whatsappText =
+		whatsappLink + shareText + " https://www.songtastic.xyz/";
 	return (
 		<Wrapper className="Container">
 			<div id="score">
-				<h1>You scored {score} points!</h1>
+				<h1>Your Songtastic score is {score}!</h1>
 			</div>
 			<button onClick={() => handleNewQuiz()}>Retake the quiz</button>
 			<hr />
 			<div id="share">
-				<p>Share your quiz results with your friends:</p>
+				<p>Share and challenge your friends to beat your score!</p>
 				<div id="share-buttons">
 					<button>
 						<a
