@@ -4,12 +4,10 @@ import { colors } from "../../styles/GlobalStyles";
 export const Wrapper = styled.div`
 	margin-top: 100px;
 	margin-bottom: 100px;
-
-	background: ${colors.primaryBlue};
+	background: linear-gradient(301.04deg, #9584ff 42.65%, #ff3e89 100.71%);
 	color: ${colors.white};
-	border-radius: 4px;
+	border-radius: 20px;
 	padding: 50px 20px;
-
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-areas:
