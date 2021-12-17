@@ -1,9 +1,10 @@
 import React from "react";
 import { Wrapper } from "./styles";
 
-export function QuizResult({ score, setScore, setShowResult }) {
+export function QuizResult({ score, setScore, setShowResult, setResetQuiz }) {
 	const handleNewQuiz = () => {
 		setScore(0);
+		setResetQuiz(true);
 		setShowResult(false);
 	};
 

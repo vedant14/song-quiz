@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Layout, Footer, StartQuiz } from "../components";
 import Airtable from "airtable";
 
@@ -56,7 +56,16 @@ function shuffleArray(array) {
 
 const Home = ({ songData, songOptions }) => {
   const [questionNumber, setQuestionNumber] = useState(0);
+  const [resetQuiz, setResetQuiz] = useState(false);
   const questionLimit = process.env.NEXT_PUBLIC_QUESTION_LIMIT;
+
+  useEffect(() => {
+    if (resetQuiz === true) {
+      shuffleArray(songData);
+      console.log("Refreshing data");
+      setResetQuiz(false);
+    }
+  });
 
   var questions = songData.slice(0, questionLimit);
   var currentQuestion = questions[questionNumber];
@@ -81,6 +90,7 @@ const Home = ({ songData, songOptions }) => {
         optionArray={finalArray}
         setQuestionNumber={setQuestionNumber}
         questionNumber={questionNumber}
+        setResetQuiz={setResetQuiz}
       />
     </Layout>
   );

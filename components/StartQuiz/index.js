@@ -7,6 +7,7 @@ export function StartQuiz({
 	optionArray,
 	setQuestionNumber,
 	questionNumber,
+	setResetQuiz,
 }) {
 	const [score, setScore] = useState(0);
 	const [showResult, setShowResult] = useState(false);
@@ -17,6 +18,7 @@ export function StartQuiz({
 				<QuizResult
 					score={score}
 					setScore={setScore}
+					setResetQuiz={setResetQuiz}
 					setShowResult={setShowResult}
 				/>
 			) : (
